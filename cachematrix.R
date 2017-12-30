@@ -2,6 +2,12 @@
 ## functions do
 
 ## Write a short comment describing this function
+##
+## The function returns a list of functions to handle the matrix
+## that is required to be inversed. The list of functions contains
+## typical getter/setter functions to assign the original matrix
+## plus getter/setter functions to assign (and calculate) the
+## reversed matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         mat <- NULL
@@ -20,6 +26,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+## This function will calculate the inverse matrix
+## only if it was not calculated previously.
+## The function returns either way the inversed 
+## matrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
